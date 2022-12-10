@@ -1,0 +1,32 @@
+{% extends 'layout.html'%}{%block title %} KWPLH {% endblock %}{%block content %}
+<!-- About Start -->
+<div class="container-fluid py-3">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/Picture Berau/Labuan Cermin/Labuan Cermin 3.png') }}" style="object-fit: cover;">
+                </div>
+                
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h1 class="text-primary text-uppercase" style="letter-spacing: 3px;">About Us</h1>
+                    <h6 class="mb-3"><p>
+                        Masyarakat dapat duduk-duduk di sekitar pantai sambil menikmati hembusan angin. Paling menarik di kawasan ini adalah saat air surut. Pengunjung akan melihat adanya gundukan tanah di tengah laut. Gundukan tersebut dikenal sebagai Pulau Babi yang disebut juga Pulau Tukung.                    
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4122393898433!2d116.80857704261655!3d-1.2788766656209294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1475b5204db5d%3A0xbd89f03e103910b3!2sPantai%20Melawai!5e0!3m2!1sen!2sid!4v1670470322520!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                        
+                        </div>
+                    </div>    
+                    <a href="{{url_for ('destination')}}" class="left "><-Kembali</a>
+                    <a href="{{url_for ('contact')}}" class="right">Informasi-></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- About End -->
+{% endblock %}

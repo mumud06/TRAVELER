@@ -1,0 +1,33 @@
+{% extends 'layout.html'%}{%block title %} KWPLH {% endblock %}{%block content %}
+<!-- About Start -->
+<div class="container-fluid py-3">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/Picture Bpp/Masjid Islamic Center/MIC 5.png') }}" style="object-fit: cover;">
+                </div>
+                
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h1 class="text-primary text-uppercase" style="letter-spacing: 3px;">About Us</h1>
+                    <h6 class="mb-3"><p>
+                        Masjid Islamic Center Balikpapan dikenal sebagai Masjid Madinatul Iman. Tak dapat dipungkiri, ini masjid terbaru, terbesar, dan termegah di Balikpapan, mengalahkan masjid termegah sebelumnya, Masjid Agung At Taqwa. Masjid berlokasi di Jl. Belibis Raya, Gn Bahagia, Balikpapan Selatan, berjarak sekitar 12 km dari pusat kota, arah Timur Laut.                    
+                    
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.887023609481!2d116.87981401367816!3d-1.2379797990970336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1460d187fb791%3A0x5e15c021fdddf4cc!2sBalikpapan%20Islamic%20Center!5e0!3m2!1sen!2sid!4v1670469231503!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                        </div>
+                    </div>    
+                    <a href="{{url_for ('destination')}}" class="left "><-Kembali</a>
+                    <a href="{{url_for ('contact')}}" class="right">Informasi-></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- About End -->
+{% endblock %}

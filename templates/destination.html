@@ -1,0 +1,876 @@
+{% extends 'layout.html'%}
+
+{%block title %} destination {% endblock %}
+
+{%block content %}
+<div class="container-fluid py-3">
+    <div class="container pb-5">
+        <div class="row align-items-center" style="min-height: 10px;">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3 mb-md-0">
+                            <select class="custom-select px-4" style="width: 930px;height: 47px;">
+                                <option selected>Destination</option>
+                                <option value="1">Wisata Alam</option>
+                                <option value="2">Wisata Buatan</option>
+                                <option value="3">Wisata Religi</option>
+                                <option value="4">Wisata Bahari</option>
+                                <option value="5">Wisata Sejarah</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-block" type="submit"
+                    style="height: 47px; margin-top: -2px;">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+            <h1>Rekomendasi Wisata</h1>
+        </div>
+        <div class="row">
+            <!-- Wisata Alam -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bpp/KAWASAN WISATA PENDIDIKAN LINGKUNGAN HIDUP (KWPLH)/KWPLH 2.jpeg') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Balikpapan</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('KWPLH') }}">Kawasan Wisata Pendidikan
+                            Lingkungan Hidup (KWPLH)</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6
+                                </h6>
+                                <h5 class="m-0">Seiklasnya</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Berau/Air Panas Asin Biatan/Air Panas Asin Biatan 4.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Berau</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('AirPanas') }}">Air Panas Asin Biatan</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.1
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/picture Kutai Barat/Kersik Luway/Kersik Luway 5.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kutai Barat</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('KersikLuway') }}">Keris Luway</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bontang/Teluk Kaba/Teluk Kaba 3.png') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Bontang</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('TelukKaba') }}">Teluk Kaba</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Mahakam Ulu/Gunung Liangpran/Gunung.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Mahakam Ulu</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('GunungLiang') }}">Gunung Liangpran</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>3.7
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Paser/Air Terjun Doyam GERIGU,/Air Terjun Doyam Gerigi.jpg') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paser</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('AirTerjun') }}">Air Terjun Doyam Gerigu</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Penajam/Air Terjun Tembinus/air-terjun-tembinus.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Penajam</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('NiagaraTembinus') }}">Air Terjun Tembinus</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Samarinda/Wisata Sawah Betapus/Wisata-Sawah.jpg') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Samarinda</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('WisataSawah') }}">Wisata Sawah Betapus</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Sangatta/Wisata Alam Prevab TNKutai/Prevab TNKutai.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sangtta</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('TNKutai') }}">Wisata Alam TNKutai</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Tenggarong/Bukit Batu Dinding/bukit.png') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tenggarong</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('BukitBatu') }}">Bukit Batu Dinding</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5</h6>
+                                <h5 class="m-0">Rp.5000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wisata Buatan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bpp/Waduk Manggar/waduk manggar 2.png') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Balikpapan</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('WadukManggar') }}">WADUK MANGGAR</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.0
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/picture Kutai Barat/CIA Wisata/CIA Wisata 1.png') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kutai Barat</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('CIA') }}">CIA Wisata</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.1
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bontang/Bontang Kuala/Bontang Kuala 2.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Bontang</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Bontang') }}">Bontang Kuala</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6
+                                </h6>
+                                <h5 class="m-0">Rp.200000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Paser/Penangkaran Rusa Penajam/Rusa.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paser</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Penangkaran') }}">Penangkaran Rusa Penajam</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.0
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Penajam/Taman Bunga Rozeline/Taman Bunga.png') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Penajam</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Taman') }}">Taman Bunga Rozeline</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Samarinda/Naureen Mini Garden/Naureen Mini Garden.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Samarinda</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Garden') }}">Naureen Mini Garden</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Tenggarong/Waduk Panji Sukarame/Waduk Panji.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tenggarong</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Buatan</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('WadukPanji') }}">Waduk Panji Sukarame</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wisata Religi -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bpp/Masjid Islamic Center/MIC 5.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Balikpapan</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Religi</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('MIC') }}">Masjid Islamic Center</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Berau/Masjid Agung Baitul Hikmah/Masjid Agung Baitul Hikmah 1.jpg') }}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Berau</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Religi</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Mesjid') }}">Masjid Agung Baitul Hikmah</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bontang/Mesjid/Masjid_Jami.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Bontang</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Religi</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('MasjidJami') }}">Masjid Jami’ Adji Amir Hasanoeddin</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Mahakam Ulu/Gereja Katolik Pariki Santo Petrus/Gereja.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Mahakam Ulu</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Religi</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Gereja') }}">Pastoran Gereja Katolik Santo Petrus Ujoh Bilang</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>5.0</h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Samarinda/MIC/MIC.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Samarinda</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Religi</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('ISC') }}">Islamic Center Samarinda</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Tenggarong/Great Mosque of Sultan/Masjid Jami Kutai Kartanegara.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tenggarong</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('GMS') }}">Great Mosque of Sultan</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wisata Bahari --> 
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bpp/Pantai Lamaru/Lamaru.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Balikpapan</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Lamaru') }}">Pantai Lamaru</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.20000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Berau/Labuan Cermin/Labuan Cermin 3.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Berau</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('LabuanCermin') }}">Labuan Cermin</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/picture Kutai Barat/Air Hemaq Beniung/Air Hemaq Beniung 1.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kutai Barat</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('AirHemaq') }}">Air Hemaq Beniung</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.3
+                                </h6>
+                                <h5 class="m-0">Rp.2000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bontang/Pantai Segajah/Pantai Segajah 1.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Bontang</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('PantaiSegajah') }}">Pulau Segajah</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.3
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bontang/Pulau Gusung/Pulau Gusung 1.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paser</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('PulauGusung') }}">Pulau Gusung</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.3
+                                </h6>
+                                <h5 class="m-0">Rp.200000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Penajam/Pantai tanjung jumlai/pantai.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Penajam</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('PantaiTanjung') }}">Pantai tanjung jumlai</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Samarinda/Dermaga Kapal Wisata Sungai Mahakam/pantai.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Samarinda</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Dermaga') }}">Dermaga Kapal Wisata Sungai Mahakam</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Gratis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Sangatta/Pulau Miang Sangkulirang/pulau.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sangtta</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('PulauMiang') }}">Pulau Miang Sangkulirang</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Tenggarong/Danau Semayang/danau.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tenggarong</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Bahari</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('DanauSemayang') }}">Danau Semayang</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Rp.5000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wisata Sejarah -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Bpp/RUMAH DAHOR HERITAGE/rumah dahor 1.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Balikpapan</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Sejarah</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('RumahDahor') }}">Rumah Dahor Heritage</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Berau/Keraton Kesultanan Sambaliung/Keraton Kesultanan Sambaliung 3.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Berau</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Sejarah</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Keraton') }}">Keraton Kesultanan Sambaliung</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/picture Kutai Barat/Lamin Tolan/Lamin Tolan 3.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kutai Barat</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Sejarah</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('LaminTolan') }}">Lamin Tolan</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.2
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Paser/Museum Sadurengas/Museum1.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paser</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Alam</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('MuseumSandurengas') }}">Museum Sadurengas</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.7500</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Samarinda/Museum Mulawarman/Museum.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Samarinda</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Sejarah</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('Museum') }}">Museum Mulawarman</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4
+                                </h6>
+                                <h5 class="m-0">Rp.15000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid"
+                        src="{{ url_for('static', filename='img/Picture Tenggarong/Kedaton Kutai Kartanegara/kedaton.png') }}"
+                        alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tenggarong</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Wisata Sejarah</small>
+                        </div>
+                        <a class="h5 text-decoration-none" href="{{ url_for('kedaton') }}">Kedaton Kutai Kartanegara</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
+                                </h6>
+                                <h5 class="m-0">Rp.10000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 150px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/footer1.png' ) }}"></a></h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}"></a></h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/footer1.png' ) }}"></a></h5></h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}"></a></h5>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="{{url_for ('home')}}">TRAVELER</a>. All Rights Reserved.</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center text-md-right">
+            <p class="m-0 text-white-50">Designed by <a href="{{url_for ('home')}}">Local Pride</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+{% endblock %}

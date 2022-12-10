@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}{%block title %} Taman Bunga Rozeline {% endblock %}{%block content %}
+<!-- About Start -->
+<div class="container-fluid py-3">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/Picture Penajam/Taman Bunga Rozeline/Taman Bunga.png') }}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h1 class="text-primary text-uppercase" style="letter-spacing: 3px;">About Us</h1>
+                    <h6 class="mb-3"><p>
+                        Taman Bunga Rozeline di calon ibu kota baru berhasil menarik atensi masyarakat luas. Selain karena keindahannya yang memang memukau, tempat ini juga dikabarkan menyimpan kisah cinta di baliknya. Nama Rozeline sendiri diadopsi dari identitas mendiang istri Bupati Penajam Paser Utara. Romantisasi atas kisah cinta tersebut sedikit banyak mampu memicu rasa penasaran wisatawan dari berbagai penjuru. Apalagi, secara tampilan penampakan ruang terbuka hijau ini terbilang estetis dengan aneka pohon yang tertata rapi serta payung hias cantik berwarna-warni turut melengkapi.                    
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7813959421524!2d116.7309721136782!3d-1.3063032990472332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df13c06aaaaaaab%3A0x4e6c29123c7ffcb5!2sTaman%20Bunga%20Rozeline%20Gif!5e0!3m2!1sen!2sid!4v1670492308302!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        </div>
+                    </div>
+                    <a href="{{url_for ('destination')}}" class="left "><-Kembali</a>
+                    <a href="{{url_for ('contact')}}" class="right">Informasi-></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- About End -->
+{% endblock %}

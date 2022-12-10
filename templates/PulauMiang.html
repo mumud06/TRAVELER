@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}{%block title %} Penangkaran Rusa Penajam {% endblock %}{%block content %}
+<!-- About Start -->
+<div class="container-fluid py-3">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="{{ url_for('static', filename='img/Picture Bontang/Pantai Segajah/Pantai Segajah 1.jpg') }}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h1 class="text-primary text-uppercase" style="letter-spacing: 3px;">About Us</h1>
+                    <h6 class="mb-3"><p>
+                        Dasar laut pulau ini sangat indah sehingga sangat cocok digunakan untuk snorkeling dan berenang. Jika Anda tidak memiliki alat yang lengkap maka bisa menyewa pada beberapa penyedia jasa yang ada di sekitar pantai. Pulau ini tidak hanya menawarkan beberapa keindahan alam saja namun juga berbagai pedagang kuliner juga turut serta dalam wisata.                    
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.804337904614!2d117.55670091367725!3d0.1516884998893305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a1383c6087bbf%3A0x59f542509cb5447e!2sPulau%20Segajah!5e0!3m2!1sen!2sid!4v1670495423198!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        </div>
+                    </div>
+                    <a href="{{url_for ('destination')}}" class="left "><-Kembali</a>
+                    <a href="{{url_for ('contact')}}" class="right">Informasi-></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- About End -->
+{% endblock %}
