@@ -1,10 +1,9 @@
-from flask import Flask, render_template, request
+from flask import flask, render_template, request
 from process import preparation, generate_response
-import sys
 
 preparation()
 
-app = Flask("Local Pride")
+app = flask("Local Pride")
 
 
 @app.route("/")
