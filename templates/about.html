@@ -32,20 +32,98 @@
 </div>
 <!-- About End -->
 
+ <!-- Team Start -->
+ <div class="container-fluid py-3">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Team</h6>
+            <h1>Local Pride</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/Team/Habibi.jpg') }}" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Habibie</h5>
+                        <p class="m-0">Deployment</p>
+                        <p class="m-0">UI/UX</p>
+                        <p class="m-0">Evaluation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/Team/Sherly.jpg') }}" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Sherly</h5>
+                        <p class="m-0">Data Acquisition</p>
+                        <p class="m-0">Data Preprocessing</p>
+                        <p class="m-0">Evaluation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/Team/Mumud.png') }}" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Mumud</h5>
+                        <p class="m-0">Modelling</p>
+                        <p class="m-0">Deployment</p>
+                        <p class="m-0">UI/UX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/Team/nisa.png') }}" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Khairunnisa</h5>
+                        <p class="m-0">Data Acuqisition</p>
+                        <p class="m-0">Data Preprocessing</p>
+                        <p class="m-0">Chatbot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/Team/Rian.jpg') }}" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Rian</h5>
+                        <p class="m-0">Data Acquisition</p>
+                        <p class="m-0">Data Preprocessing</p>
+                        <p class="m-0">Chatbot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 150px;">
     <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/footer1.png' ) }}"></a></h5>
+        <div class="col-3">
+            <img class="img-fluid" src="{{ url_for('static', filename='img/footer1.png' ) }}">
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}"></a></h5>
+        <div class="col-3">
+            <img class="img-fluid" src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}">
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/footer1.png' ) }}"></a></h5></h5>
+        <div class="col-3">
+            <img class="img-fluid" src="{{ url_for('static', filename='img/footer1.png' ) }}">
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"><a href="{{url_for ('home')}}"><img src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}"></a></h5>
+        <div class="col-3">
+            <img class="img-fluid" src="{{ url_for('static', filename='img/KampusMerdeka1.png' ) }}">
         </div>
     </div>
 </div>
