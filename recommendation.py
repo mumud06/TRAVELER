@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def rekomendasi(filter="TAG"):
-    df = pd.read_csv("dataset/Dataset Wisata 1.csv")
+    df = pd.read_csv("dataset/DatasetWisata.csv")
     data_bobot = df.groupby(filter).agg(["mean", "count"])["Ratings"].reset_index()
     m = data_bobot["count"].quantile(0.7)
     data_bobot = data_bobot[data_bobot["count"] > m]
@@ -14,7 +14,9 @@ def rekomendasi(filter="TAG"):
         drop=True
     )
     data_bobot_final = pd.merge(data_bobot, df, on=filter)[
-        ["Nama Wisata", "Lokasi", "Jenis Wisata", "Harga Tiket", "Ratings"]
+        ["Nama Wisata", "Lokasi", "Jenis Wisata", "Harga Tiket", "Ratings", "Images"]
     ].drop_duplicates("Jenis Wisata")
-    top_10 = data_bobot_final.iloc[:15].to_dict()
-    return top_10
+    top_12 = data_bobot_final.iloc[:12]
+    top_12 = top_12.transpose()
+    top_12 = top_12.to_dict()
+    return top_12

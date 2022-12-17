@@ -90,31 +90,12 @@
     {
       "tag": "Rilis",
       "patterns": [
-        "Kapan diluncurkan Local Pride?",
-        "Kapan Local Pride rilis?",
+        "Kapan Traveler rilis?",
         "Kapan aplikasi ini dirilis?",
         "kapan aplikasi ini dibuat?"
       ],
       "responses": [
         "Traveler dirilis 1 November 2022 "
-      ]
-    },
-    {
-      "tag": "bayar",
-      "patterns": [
-        "Bagaimana cara pembayaran Traveler?"
-      ],
-      "responses": [
-        "Pembayaran Local Pride dapat secara tunai atau melalui QRIS yang kami sediakan atau dengan mitra kami yang bertugas di lokasi "
-      ]
-    },
-    {
-      "tag": "kesalahan",
-      "patterns": [
-        "Min, Aplikasi nya lagi eror nih?"
-      ],
-      "responses": [
-        "Mohon restart ulang aplikasinya ya, dengan merefresh halaman nya atau close open aplikasinya ya"
       ]
     },
     {
@@ -130,7 +111,8 @@
     {
       "tag": "Deskripsi Kalimantan Timur",
       "patterns": [
-        "Apa itu kalimantan timur?"
+        "Apa itu kalimantan timur?",
+        "Kalimantan timur?"
       ],
       "responses": [
         "Kalimantan Timur (disingkat Kaltim) adalah sebuah provinsi Indonesia di Pulau Kalimantan bagian ujung timur pulau kalimantan. Kalimantan Timur merupakan wilayah dengan kepadatan penduduk terendah ke empat di Nusantara. Ibu kotanya adalah Kota Samarinda."
@@ -139,7 +121,8 @@
     {
       "tag": "Sejarah Kalimantan Timur",
       "patterns": [
-        "Sejarah di kalimantan timur??"
+        "Sejarah di kalimantan timur??",
+        "Sejarah Kalimantan timur?"
       ],
       "responses": [
         "Wilayah Kalimantan Timur meliputi Paser, Kutai, Berau dan juga Karasikan (Buranun/pra-Kesultanan Sulu) diklaim sebagai wilayah taklukan Maharaja Suryanata, gubernur Majapahit di Negara Dipa (yang berkedudukan di Candi Agung di Amuntai) hingga tahun 1620 pada masa Kesultanan Banjar. Bahkan sebelum adanya bala bantuan dari Kesultanan Demak, Kesultanan Banjar sudah melebarkan pengaruhnya ke Paser, Kutai, dan Berau. Kedatangan orang Banjar membantu memperluas pengaruh kekuasaan Kesultanan Kutai terhadap masyarakat Dayak di pedalaman.[9][10] Semenjak itulah pedagang-pedagang asal Banjar mulai mendominasi. "
@@ -148,7 +131,8 @@
     {
       "tag": "Suku Kalimantan Timur",
       "patterns": [
-        "Suku warga Kalimantan Timur"
+        "Suku warga Kalimantan Timur?",
+        "suku di kalimantan timur?"
       ],
       "responses": [
         "Suku-Suku di Kalimantan Timur pertama yakni Dayak. Suku ini merupakan suku asli yang terbesar mendiami wilayah Kalimantan. Mereka masih tinggal di pedalaman Kalimantan. Suku Dayak mempunyai enam rumpun besar, yaitu Klemantan, Iban, Apokayan, Murut, Ot Danum-Ngaju, serta Punan. dan lainnya yaitu: Suku Punan Batu Kutai Timur, Suku Punan Basap Kutai Timur, Suku Bukat: Kutai Barat, Suku Busang: Kutai Barat, Suku Ohong: Kutai Barat, Suku Penihing: Kutai Barat, Suku Punan: Kutai Barat, Suku Modang: Kutai Timur."
