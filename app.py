@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 from process import preparation, generate_response
 from recommendation import rekomendasi
-import sys
 
 preparation()
 

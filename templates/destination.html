@@ -3,6 +3,8 @@
 {%block title %} destination {% endblock %}
 
 {%block content %}
+
+<!-- Pencarian Start -->
 <div class="container-fluid py-3">
     <div class="container pb-5">
         <form action="/rekomendasi_des" method="post">
@@ -29,6 +31,9 @@
         </form>
     </div>
 </div>
+<!-- Pencarian End -->
+
+<!-- Destination Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
         <div class="text-center mb-3 pb-3">
@@ -36,7 +41,8 @@
             <h1>Rekomendasi Wisata</h1>
         </div>
         <div class="row">
-            <!-- Loping -->
+
+            <!-- Loping Start -->
             {% for a,b in res.items() %}
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="package-item bg-white mb-2">
@@ -58,10 +64,12 @@
                 </div>
             </div>
             {% endfor %}
-            <!-- End Looping -->
+            <!-- Looping End -->
+
         </div>
     </div>
 </div>
+<!-- Destination End -->
 
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 150px;">
