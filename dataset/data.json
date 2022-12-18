@@ -125,7 +125,7 @@
         "Sejarah Kalimantan timur?"
       ],
       "responses": [
-        "Wilayah Kalimantan Timur meliputi Paser, Kutai, Berau dan juga Karasikan (Buranun/pra-Kesultanan Sulu) diklaim sebagai wilayah taklukan Maharaja Suryanata, gubernur Majapahit di Negara Dipa (yang berkedudukan di Candi Agung di Amuntai) hingga tahun 1620 pada masa Kesultanan Banjar. Bahkan sebelum adanya bala bantuan dari Kesultanan Demak, Kesultanan Banjar sudah melebarkan pengaruhnya ke Paser, Kutai, dan Berau. Kedatangan orang Banjar membantu memperluas pengaruh kekuasaan Kesultanan Kutai terhadap masyarakat Dayak di pedalaman.[9][10] Semenjak itulah pedagang-pedagang asal Banjar mulai mendominasi. "
+        "Wilayah Kalimantan Timur meliputi Paser, Kutai, Berau dan juga Karasikan (Buranun/pra-Kesultanan Sulu) diklaim sebagai wilayah taklukan Maharaja Suryanata, gubernur Majapahit di Negara Dipa (yang berkedudukan di Candi Agung di Amuntai) hingga tahun 1620 pada masa Kesultanan Banjar. Bahkan sebelum adanya bala bantuan dari Kesultanan Demak, Kesultanan Banjar sudah melebarkan pengaruhnya ke Paser, Kutai, dan Berau. Kedatangan orang Banjar membantu memperluas pengaruh kekuasaan Kesultanan Kutai terhadap masyarakat Dayak di pedalaman. Semenjak itulah pedagang-pedagang asal Banjar mulai mendominasi. "
       ]
     },
     {
@@ -141,7 +141,8 @@
     {
       "tag": "Wisata Museum Mulawarman",
       "patterns": [
-        "Apa itu Museum Mulawarman?"
+        "Apa itu Museum Mulawarman",
+        "Museum Mulawarman"
       ],
       "responses": [
         "Museum Mulawarman adalah salah satu museum yang paling terkenal di pulau Kalimantan. Museum ini memiliki kurang lebih 5.373 koleksi benda bersejarah yang terbagi ke dalam berbagai jenis. Koleksi benda bersejarah itu meliputi patung-patung dan benda bersejarah, perabotan kuno, kamar tidur dengan hiasan kain 'doyo' tenunan tangan serta barang-barang dari dinasti Ming, Qing, dan Yuan. Di Museum Mulawarman ini pengunjung juga dapat melihat teater boneka Bali yang disumbangkan oleh Sultan Yogyakarta."
@@ -150,7 +151,8 @@
     {
       "tag": "Lokasi Museum Mulawarwam? ",
       "patterns": [
-        "dimana lokasi Museum Mulawarman?"
+        "dimana lokasi Museum Mulawarman?",
+        "Dimana Museum Mulawarman"
       ],
       "responses": [
         "berada di Jalan Tepian Pandan, Panji, Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur."
@@ -159,7 +161,8 @@
     {
       "tag": "Harga tiket masuk ke Museum Mulawarman",
       "patterns": [
-        "berapa harga tiket masuk ke Museum Mulawarman?"
+        "berapa harga tiket masuk ke Museum Mulawarman?",
+        "Tiket masuk museum mulawarman"
       ],
       "responses": [
         "Harga tiket masuk ke museum mulawarman yaitu Rp. 2.500 untuk orang dewasa dan Rp. 1.000 untuk anak-anak."
@@ -168,16 +171,18 @@
     {
       "tag": "Rating Museum Mulawarman",
       "patterns": [
-        "berapa rating untuk Museum Mulawarman?"
+        "berapa rating untuk Museum Mulawarman?",
+        "Rating Museum Mulawarman"
       ],
       "responses": [
-        "Rating dari pengguna kami yaitu: 4,2 dari 5,0."
+        "Rating dari pengguna kami yaitu: 4.2 dari 5.0."
       ]
     },
     {
       "tag": "Wisata Taman Kota Raja Tenggarong",
       "patterns": [
-        "Apa itu Taman Kota Raja Tenggarong?"
+        "Apa itu Taman Kota Raja Tenggarong?",
+        "Taman Kota Raja Tenggarong"
       ],
       "responses": [
         "Taman di Tenggarong ini sengaja dibangun di lingkungan perkotaan untuk bisa dinikmati oleh seluruh masyarakat. Selain menjadi lokasi untuk berkumpul dan bersantai, taman juga menambah keindahan dari sebuah perkotaan. Terutama di Kota Tenggarong ini, taman menjadi tempat yang memiliki daya pikatnya tersendiri bagi pengunjungnya."
@@ -186,7 +191,8 @@
     {
       "tag": "Lokasi Taman Kota Raja Tenggarong",
       "patterns": [
-        "dimana lokasi Taman Kota Raja Tenggarong?"
+        "dimana lokasi Taman Kota Raja Tenggarong?",
+        "Taman Kota Raja Tenggarong"
       ],
       "responses": [
         "Jl. Robert Wolter Mongisidi No.16, Timbau, Kec. Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur 75511."
@@ -195,7 +201,8 @@
     {
       "tag": "Harga Tiker Taman Kota Raja Tenggarong",
       "patterns": [
-        "berapa harga tiket masuk ke Taman Kota Raja Tenggarong?"
+        "berapa harga tiket masuk ke Taman Kota Raja Tenggarong?",
+        "Harga tiket masuk Taman Kota Raja Tenggarong"
       ],
       "responses": [
         "free"
@@ -204,7 +211,8 @@
     {
       "tag": "Wisata Pantai Bualbual",
       "patterns": [
-        "Apa itu wisata pantai bualbual?"
+        "Apa itu wisata pantai bualbual?",
+        "Pantai Bualbual"
       ],
       "responses": [
         "wisata pantai bualbual merupakan salah satu wisata yang ada di dusun bualbual, Desa Kerayan, Kecamatan Sangkulirang, Kutai Timur. pemandangan wisata pantai yang indah, hamparan pasir putih masih alami, terumbu karang dan ikan yang hidup damai di tengah habitatnya, tersaji dengan tulus dan asri."
@@ -222,7 +230,7 @@
     {
       "tag": "Keunikan Wisata Pantai Bualbual",
       "patterns": [
-        "fakta unik dari wisata pantai bualbual ?"
+        "fakta unik dari wisata pantai bualbual?"
       ],
       "responses": [
         "Pengunjung, juga akan menemukan sumber air unik yang akan terus mengalir, meski air laut sedang pasang. Sumber air itulah, cikal-bakal nama Bual-Bual. Sumber air itu tetap mengeluarkan air walaupun air laut pasang. Tidak hanya unik. Sumber air Bual-bual, juga  menjadi andalan masyarakat setempat untuk mendapatkan air bersih saat kemarau panjang."
@@ -231,7 +239,7 @@
     {
       "tag": "Lokasi Wisata Pantai Bualbual",
       "patterns": [
-        "dimana lokasi wisata pantai bualbual ?"
+        "Dimana wisata pantai bualbual?"
       ],
       "responses": [
         "Dusun Bual-bual, Desa Kerayan, Kecamatan Sangkulirang, Kutai Timur."
@@ -250,7 +258,7 @@
     {
       "tag": "Harga Tiket Pantai Bualbual",
       "patterns": [
-        "berapa harga tiket masuk ke ?"
+        "harga tiket masuk Pantai Bualbual?"
       ],
       "responses": [
         "free"
@@ -259,7 +267,7 @@
     {
       "tag": "Rating Pantai Bualbual",
       "patterns": [
-        "berapa rating untuk ?"
+        "berapa rating untuk Pantai Bualbual ?"
       ],
       "responses": [
         "Rating dari pengguna kami yaitu: 4,1 dari 5,0."
@@ -268,7 +276,7 @@
     {
       "tag": "Fasilitas Pantai Bualbual",
       "patterns": [
-        "fasilitas apa aja yang ada di ?"
+        "fasilitas apa aja yang ada di Pantai Bualbual?"
       ],
       "responses": [
         "fasilitas yang ada di pantai bualbual yaitu  1. Parkir 2. Toilet"
@@ -277,7 +285,8 @@
     {
       "tag": "Wisata samurangau Eco Park",
       "patterns": [
-        "Apa itu wisata samurangau Eco Park?"
+        "Apa itu wisata samurangau Eco Park?",
+        "wisata samurangau Eco Park"
       ],
       "responses": [
         "wisata samurangau Eco Park merupakan sebuah wisata edukasi yang menampilkan edukasi sejarah dan budaya dengan pemandangan hutan yang rindnag dan asri"
@@ -304,7 +313,7 @@
     {
       "tag": "Lokasi Wisata samurangau Eco Park",
       "patterns": [
-        "dimana lokasi wisata samurangau Eco Park ?"
+        "Dimana wisata samurangau Eco Park ?"
       ],
       "responses": [
         "Desa samurangau, kec. batu Sopang, Kab. Paser, Kalimantan Timur."
@@ -332,10 +341,10 @@
     {
       "tag": "Rating samurangau Eco Park",
       "patterns": [
-        "berapa rating untuk wisata samurangau Eco Park?"
+        "rating wisata samurangau Eco Park?"
       ],
       "responses": [
-        "Rating dari pengguna kami yaitu: 4,2 dari 5,0."
+        "Rating dari pengguna kami yaitu: 4.2 dari 5.0."
       ]
     },
     {
@@ -360,7 +369,7 @@
     {
       "tag": "keunikan wisata Ampanas",
       "patterns": [
-        "fakta unik dari Ampanas ?"
+        "fakta unik wisata Ampanas ?"
       ],
       "responses": [
         "Mulut Goa Ampanas tampak seperti tenggorokan mulut manusia yang menganga. Di dalam goa berbagai macam keunikan batu khas karst hidup yang ditandai dengan tetes-tetes air dinding doa tersebut. \n Kira-kira panjangnya 50 meter dan lebarnya ya sekitar 5 meter, sedangkan di bagian depan tingginya sekitar 7 meter. Tapi semakin kita masuk ke dalam gua semakin sempit mengerucut. \n Selain itu, terdapat potensi air belerang atau air panas yang tak jauh dari gua, atau berjarak sekira 100 meter. Dikatakan, air yang mengalir dari sungai kecil dan sumber air itu dipercaya masyarakat setempat dapat mengobati berbagai macam penyakit, khususnya penyakit kulit."
@@ -369,7 +378,7 @@
     {
       "tag": "lokasi Ampanas",
       "patterns": [
-        "dimana lokasi wisata Ampanas ?"
+        "Dimana wisata Ampanas ?"
       ],
       "responses": [
         "Desa Pengadaan, Kecamatan Karangan, Kabupaten Kutai Timur."
@@ -378,7 +387,7 @@
     {
       "tag": "waktu tempuh Ampanas",
       "patterns": [
-        "berapa lama waktu yang dibutuhkan untuk pergi ke Ampanas ?"
+        "berapa lama waktu tempuh ke Wisata Ampanas?"
       ],
       "responses": [
         "Kamu bisa menempuh Dari Sangatta Utara, butuh waktu 4 hingga 5 jam untuk sampai di lokasi wisata tersebut. Sementara, dibutuhkan waktu perjalanan kurang lebih satu jam jika berangkat dari pusat Kecamatan Karangan. Meski terlebih dahulu harus melintasi jalan berdebu dan berbatu, pengunjung menikmati perjalanan dengan suasana alam yang dipenuhi dengan pepohonan dan kicauan burung di hutan tropis khas Borneo."
